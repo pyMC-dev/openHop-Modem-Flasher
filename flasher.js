@@ -227,6 +227,11 @@ function setup() {
     return firmware.version[firstVersion].files.length > 0;
   }
 
+  const firmwareHasFlashWipe = () => {
+    const files = getSelFwValue('files');
+    return Array.isArray(files) && files.some(file => file.type === 'flash-wipe');
+  }
+
   // --- URL Routing ---
   // NOTE: the server must serve index.html for all paths (catch-all / try_files).
 
@@ -656,7 +661,7 @@ function setup() {
     stepBack,
     customFirmwareLoad, getFirmwarePath,
     getSelFwValue, getRoleFwValue, getNotice, formatChangeLog,
-    firmwareHasData,
+    firmwareHasData, firmwareHasFlashWipe,
     canFlash, nrfErase
   }
 }

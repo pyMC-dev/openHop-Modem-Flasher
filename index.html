@@ -7,7 +7,7 @@
   <title>MeshCore flasher</title>
   <link href="/css/beer.css" rel="stylesheet">
   <link href="/css/flasher.css" rel="stylesheet">
-  <script type="module" src="/flasher.js"></script>
+  <script type="module" src="/flasher.js?v=pymc1"></script>
 </head>
 
 <body class="dark">
@@ -114,7 +114,7 @@
             </div>
           </nav>
         </header>
-        <ul class="list border" v-if="selected.device.type === 'esp32'">
+        <ul class="list border" v-if="selected.device.type === 'esp32' && firmwareHasFlashWipe()">
           <li>
             <label class="checkbox">
               <input type="checkbox" v-model="selected.wipe">
@@ -139,7 +139,7 @@
               Your browser doesn't support Web Serial API. Please use Chrome or Edge on Desktop
             </div>
           </button>
-          <button @click="nrfErase" :disabled="!flashing.supported || selected.nrfEraserFlashing || selected.nrfEraserFlashingPercent > 0">
+          <button v-if="selected.device.erase" @click="nrfErase" :disabled="!flashing.supported || selected.nrfEraserFlashing || selected.nrfEraserFlashingPercent > 0">
             <i v-if="selected.nrfEraserFlashingPercent === 100">check</i>
             <progress v-else-if="selected.nrfEraserFlashing" class="circle small"></progress>
             <i v-else>delete_forever</i>
