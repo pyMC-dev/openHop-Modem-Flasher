@@ -618,7 +618,7 @@ function setup() {
   };
 
   const devices = computed(() => {
-    const classes = ['ripple', 'meshos', 'community'];
+    const classes = ['pymc', 'ripple', 'meshos', 'community'];
     const deviceGroups = {};
 
     let index = 0;

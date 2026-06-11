@@ -224,11 +224,6 @@
             <h5 class="small max logo-top">
               <img src="/img/meshcore.svg"> <span>flasher</span>
             </h5>
-            <button class="transparent hide-mobile" @click="openSerialGUI()">
-              <i>manufacturing</i>
-              <span>Repeater Setup</span>
-              <div class="tooltip left max">Open GUI to configure Repeaters and Room servers via USB serial</div>
-            </button>
             <button class="transparent" @click="openSerialCon()">
               <i>terminal</i>
               <span>Console</span>
@@ -249,14 +244,18 @@
             <details open>
               <summary style="background-color: var(--surface-container)">
                 <div>
-                  <strong v-if="type === 'ripple'">Ripple Firmware</strong>
+                  <strong v-if="type === 'pymc'">pyMC Modem Firmwares</strong>
+                  <strong v-else-if="type === 'ripple'">Ripple Firmware</strong>
                   <strong v-else-if="type === 'meshos'">MeshOS Firmware</strong>
-                  <strong v-else-if="type === 'community'">Community Firmware</strong>
+                  <strong v-else-if="type === 'community'">Other Firmwares</strong>
                   <div class="tooltip right max">
-                    <template v-if="type === 'ripple'">
+                    <template v-if="type === 'pymc'">
+                      pyMC Modem firmware provided by <a class="inverse-link" target="_blank" href="https://github.com/pyMC-dev/pymc_modem">pyMC-dev/pymc_modem</a>
+                    </template>
+                    <template v-else-if="type === 'ripple'">
                       Freemium firmware provided by <a class="inverse-link" target="_blank" href="https://buymeacoffee.com/ripplebiz">Ripple Radios</a>
                     </template>
-                    <template v-if="type === 'meshos'">
+                    <template v-else-if="type === 'meshos'">
                       Freemium firmware provided by Andy Kirby
                     </template>
                     <template v-else-if="type === 'community'">
