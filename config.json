@@ -1,10 +1,10 @@
 {
-	"staticPath": "/firmware",
+	"staticPath": "https://raw.githubusercontent.com/pyMC-dev/pymc_modem/main/firmware",
 	"role": {
 		"pymcUsb": {
 			"icon": "usb",
 			"title": "pyMC USB Modem",
-			"tooltip": "Flash pyMC modem USB firmware from pyMC-dev/pymc_modem releases."
+			"tooltip": "Flash the current pyMC modem USB firmware from pyMC-dev/pymc_modem firmware folders."
 		}
 	},
 	"notice": {},
@@ -39,23 +39,13 @@
 				{
 					"role": "pymcUsb",
 					"version": {
-						"v0.8.0": {
-							"notes": "v0.8.0 \u2014 HTTP management surface + JSON API",
+						"main": {
+							"notes": "Current firmware from pyMC-dev/pymc_modem main branch.",
 							"files": [
 								{
 									"type": "flash-update",
-									"name": "pymc_usb-v0.8.0-esp32_p4_nano.bin",
-									"title": "pymc_usb-v0.8.0-esp32_p4_nano.bin"
-								}
-							]
-						},
-						"v0.7.0": {
-							"notes": "v0.7.0 \u2014 sector-array integration set",
-							"files": [
-								{
-									"type": "flash-update",
-									"name": "pymc_usb-v0.7.0-esp32_p4_nano.bin",
-									"title": "pymc_usb-v0.7.0-esp32_p4_nano.bin"
+									"name": "esp32_p4_nano/firmware.bin",
+									"title": "esp32_p4_nano/firmware.bin"
 								}
 							]
 						}
@@ -73,23 +63,13 @@
 				{
 					"role": "pymcUsb",
 					"version": {
-						"v0.8.0": {
-							"notes": "v0.8.0 \u2014 HTTP management surface + JSON API",
+						"main": {
+							"notes": "Current firmware from pyMC-dev/pymc_modem main branch.",
 							"files": [
 								{
 									"type": "flash",
-									"name": "pymc_usb-v0.8.0-heltec_t114-dfu.zip",
-									"title": "pymc_usb-v0.8.0-heltec_t114-dfu.zip"
-								}
-							]
-						},
-						"v0.7.0": {
-							"notes": "v0.7.0 \u2014 sector-array integration set",
-							"files": [
-								{
-									"type": "flash",
-									"name": "pymc_usb-v0.7.0-heltec_t114-dfu.zip",
-									"title": "pymc_usb-v0.7.0-heltec_t114-dfu.zip"
+									"name": "heltec_t114/firmware.zip",
+									"title": "heltec_t114/firmware.zip"
 								}
 							]
 						}
@@ -108,23 +88,13 @@
 				{
 					"role": "pymcUsb",
 					"version": {
-						"v0.8.0": {
-							"notes": "v0.8.0 \u2014 HTTP management surface + JSON API",
+						"main": {
+							"notes": "Current firmware from pyMC-dev/pymc_modem main branch.",
 							"files": [
 								{
 									"type": "flash-update",
-									"name": "pymc_usb-v0.8.0-heltec_v3.bin",
-									"title": "pymc_usb-v0.8.0-heltec_v3.bin"
-								}
-							]
-						},
-						"v0.7.0": {
-							"notes": "v0.7.0 \u2014 sector-array integration set",
-							"files": [
-								{
-									"type": "flash-update",
-									"name": "pymc_usb-v0.7.0-heltec_v3.bin",
-									"title": "pymc_usb-v0.7.0-heltec_v3.bin"
+									"name": "heltec_v3/firmware.bin",
+									"title": "heltec_v3/firmware.bin"
 								}
 							]
 						}
@@ -143,23 +113,13 @@
 				{
 					"role": "pymcUsb",
 					"version": {
-						"v0.8.0": {
-							"notes": "v0.8.0 \u2014 HTTP management surface + JSON API",
+						"main": {
+							"notes": "Current firmware from pyMC-dev/pymc_modem main branch.",
 							"files": [
 								{
 									"type": "flash-update",
-									"name": "pymc_usb-v0.8.0-ikoka_stick.bin",
-									"title": "pymc_usb-v0.8.0-ikoka_stick.bin"
-								}
-							]
-						},
-						"v0.7.0": {
-							"notes": "v0.7.0 \u2014 sector-array integration set",
-							"files": [
-								{
-									"type": "flash-update",
-									"name": "pymc_usb-v0.7.0-ikoka_stick.bin",
-									"title": "pymc_usb-v0.7.0-ikoka_stick.bin"
+									"name": "ikoka_stick/firmware.bin",
+									"title": "ikoka_stick/firmware.bin"
 								}
 							]
 						}
@@ -178,23 +138,13 @@
 				{
 					"role": "pymcUsb",
 					"version": {
-						"v0.8.0": {
-							"notes": "v0.8.0 \u2014 HTTP management surface + JSON API",
+						"main": {
+							"notes": "Current firmware from pyMC-dev/pymc_modem main branch.",
 							"files": [
 								{
 									"type": "flash-update",
-									"name": "pymc_usb-v0.8.0-lilygo_t3s3.bin",
-									"title": "pymc_usb-v0.8.0-lilygo_t3s3.bin"
-								}
-							]
-						},
-						"v0.7.0": {
-							"notes": "v0.7.0 \u2014 sector-array integration set",
-							"files": [
-								{
-									"type": "flash-update",
-									"name": "pymc_usb-v0.7.0-lilygo_t3s3.bin",
-									"title": "pymc_usb-v0.7.0-lilygo_t3s3.bin"
+									"name": "lilygo_t3s3/firmware.bin",
+									"title": "lilygo_t3s3/firmware.bin"
 								}
 							]
 						}
@@ -213,23 +163,13 @@
 				{
 					"role": "pymcUsb",
 					"version": {
-						"v0.8.0": {
-							"notes": "v0.8.0 \u2014 HTTP management surface + JSON API",
+						"main": {
+							"notes": "Current firmware from pyMC-dev/pymc_modem main branch.",
 							"files": [
 								{
 									"type": "flash-update",
-									"name": "pymc_usb-v0.8.0-rak3112_wismesh.bin",
-									"title": "pymc_usb-v0.8.0-rak3112_wismesh.bin"
-								}
-							]
-						},
-						"v0.7.0": {
-							"notes": "v0.7.0 \u2014 sector-array integration set",
-							"files": [
-								{
-									"type": "flash-update",
-									"name": "pymc_usb-v0.7.0-rak3112_wismesh.bin",
-									"title": "pymc_usb-v0.7.0-rak3112_wismesh.bin"
+									"name": "rak3112_wismesh/firmware.bin",
+									"title": "rak3112_wismesh/firmware.bin"
 								}
 							]
 						}
@@ -248,13 +188,13 @@
 				{
 					"role": "pymcUsb",
 					"version": {
-						"v0.8.0": {
-							"notes": "v0.8.0 \u2014 HTTP management surface + JSON API",
+						"main": {
+							"notes": "Current firmware from pyMC-dev/pymc_modem main branch.",
 							"files": [
 								{
 									"type": "flash",
-									"name": "pymc_usb-v0.8.0-xiao_nrf52_wio-dfu.zip",
-									"title": "pymc_usb-v0.8.0-xiao_nrf52_wio-dfu.zip"
+									"name": "xiao_nrf52_wio/firmware.zip",
+									"title": "xiao_nrf52_wio/firmware.zip"
 								}
 							]
 						}
@@ -273,23 +213,13 @@
 				{
 					"role": "pymcUsb",
 					"version": {
-						"v0.8.0": {
-							"notes": "v0.8.0 \u2014 HTTP management surface + JSON API",
+						"main": {
+							"notes": "Current firmware from pyMC-dev/pymc_modem main branch.",
 							"files": [
 								{
 									"type": "flash-update",
-									"name": "pymc_usb-v0.8.0-xiao_wio_sx1262.bin",
-									"title": "pymc_usb-v0.8.0-xiao_wio_sx1262.bin"
-								}
-							]
-						},
-						"v0.7.0": {
-							"notes": "v0.7.0 \u2014 sector-array integration set",
-							"files": [
-								{
-									"type": "flash-update",
-									"name": "pymc_usb-v0.7.0-xiao_wio_sx1262.bin",
-									"title": "pymc_usb-v0.7.0-xiao_wio_sx1262.bin"
+									"name": "xiao_wio_sx1262/firmware.bin",
+									"title": "xiao_wio_sx1262/firmware.bin"
 								}
 							]
 						}
