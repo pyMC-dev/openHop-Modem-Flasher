@@ -29,6 +29,9 @@
 		},
 		"ethermesh": {
 			"name": "EtherMesh"
+		},
+		"bq": {
+			"name": "B&Q Consulting"
 		}
 	},
 	"device": [
@@ -106,6 +109,38 @@
 				}
 			],
 			"tooltip": "EtherMesh 1W ESP device"
+		},
+		{
+			"maker": "bq",
+			"class": "pymc",
+			"name": "Station G2",
+			"icon": "/img/lora.svg",
+			"type": "esp32",
+			"firmware": [
+				{
+					"role": "pymcModem",
+					"version": {
+						"custom": {
+							"notes": "Custom B&Q Consulting Station G2 pyMC Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the device and flash the factory image.",
+							"files": [
+								{
+									"type": "flash-update",
+									"name": "/firmware/station_g2/firmware.bin",
+									"title": "Update firmware only (firmware.bin)",
+									"address": 65536
+								},
+								{
+									"type": "flash-wipe",
+									"name": "/firmware/station_g2/firmware.factory.bin",
+									"title": "Erase/full flash: firmware.factory.bin @ 0x0",
+									"address": 0
+								}
+							]
+						}
+					}
+				}
+			],
+			"tooltip": "B&Q Consulting Station G2 ESP32-S3 device"
 		},
 		{
 			"maker": "heltec",

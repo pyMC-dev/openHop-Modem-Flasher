@@ -28,6 +28,7 @@ Most firmware files are loaded directly from the `pyMC-dev/pymc_modem` firmware 
 - RAK WisMesh Base/Rak3112
 - Seeed XIAO ESP32S3 + Wio SX1262
 - Seeed XIAO nRF52 + Wio SX1262
+- Station G2
 
 ## Firmware source
 
