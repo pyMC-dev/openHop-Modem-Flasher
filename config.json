@@ -38,7 +38,7 @@
 		{
 			"maker": "meshsmith",
 			"class": "pymc",
-			"name": "Ethermesh-1W",
+			"name": "EtherMesh-1W",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
@@ -65,7 +65,7 @@
 					}
 				}
 			],
-			"tooltip": "Ethermesh-1W ESP device",
+			"tooltip": "EtherMesh-1W ESP device",
 			"order": 0
 		},
 		{
