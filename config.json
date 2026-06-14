@@ -358,6 +358,94 @@
 			"tooltip": "<img class='device' src='/img/heltec_v4.svg'>"
 		},
 		{
+			"maker": "heltec",
+			"class": "pymc",
+			"name": "Heltec V4.2",
+			"icon": "/img/lora.svg",
+			"type": "esp32",
+			"firmware": [
+				{
+					"role": "pymcModem",
+					"version": {
+						"custom": {
+							"notes": "Heltec V4.2 GC1109 PA/FEM pyMC Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"files": [
+								{
+									"type": "flash-update",
+									"name": "/firmware/heltec_v42/firmware.bin",
+									"title": "Update firmware only (firmware.bin)",
+									"address": 65536
+								},
+								{
+									"type": "flash-wipe",
+									"name": "/firmware/heltec_v42/bootloader.bin",
+									"title": "Erase/full flash: bootloader.bin @ 0x0",
+									"address": 0
+								},
+								{
+									"type": "flash-wipe",
+									"name": "/firmware/heltec_v42/partitions.bin",
+									"title": "Erase/full flash: partitions.bin @ 0x8000",
+									"address": 32768
+								},
+								{
+									"type": "flash-wipe",
+									"name": "/firmware/heltec_v42/firmware.bin",
+									"title": "Erase/full flash: firmware.bin @ 0x10000",
+									"address": 65536
+								}
+							]
+						}
+					}
+				}
+			],
+			"tooltip": "<img class='device' src='/img/heltec_v4.svg'>"
+		},
+		{
+			"maker": "heltec",
+			"class": "pymc",
+			"name": "Heltec V4.3",
+			"icon": "/img/lora.svg",
+			"type": "esp32",
+			"firmware": [
+				{
+					"role": "pymcModem",
+					"version": {
+						"custom": {
+							"notes": "Heltec V4.3 KCT8103L PA/FEM pyMC Modem firmware bundled with this flasher repo, with FEM RX LNA bypass enabled for lower noise floor. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"files": [
+								{
+									"type": "flash-update",
+									"name": "/firmware/heltec_v43/firmware.bin",
+									"title": "Update firmware only (firmware.bin)",
+									"address": 65536
+								},
+								{
+									"type": "flash-wipe",
+									"name": "/firmware/heltec_v43/bootloader.bin",
+									"title": "Erase/full flash: bootloader.bin @ 0x0",
+									"address": 0
+								},
+								{
+									"type": "flash-wipe",
+									"name": "/firmware/heltec_v43/partitions.bin",
+									"title": "Erase/full flash: partitions.bin @ 0x8000",
+									"address": 32768
+								},
+								{
+									"type": "flash-wipe",
+									"name": "/firmware/heltec_v43/firmware.bin",
+									"title": "Erase/full flash: firmware.bin @ 0x10000",
+									"address": 65536
+								}
+							]
+						}
+					}
+				}
+			],
+			"tooltip": "<img class='device' src='/img/heltec_v4.svg'>"
+		},
+		{
 			"maker": "ikoka",
 			"class": "pymc",
 			"name": "Ikoka Stick",
