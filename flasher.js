@@ -242,9 +242,10 @@ function setup() {
   // --- URL Routing ---
   // NOTE: the server must serve index.html for all paths (catch-all / try_files).
 
-  const deviceToSlug = (device) => toSlug([device.class, device.name].join('-'));
+  const deviceToSlug = (device) => device.slug ?? toSlug([device.class, device.name].join('-'));
 
   const firmwareToSlug = (firmware) => {
+    if (firmware.slug) return firmware.slug;
     const title = getRoleFwValue(firmware, 'title');
     const subTitle = getRoleFwValue(firmware, 'subTitle');
     return toSlug(subTitle ? `${title}-${subTitle}` : title);
@@ -625,7 +626,7 @@ function setup() {
   };
 
   const devices = computed(() => {
-    const classes = ['pymc', 'ripple', 'meshos', 'community'];
+    const classes = ['ethermesh', 'openhop', 'ripple', 'meshos', 'community'];
     const deviceGroups = {};
 
     for(const cls of classes) {

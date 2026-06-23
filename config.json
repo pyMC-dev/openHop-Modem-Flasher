@@ -1,10 +1,15 @@
 {
 	"staticPath": "https://raw.githubusercontent.com/pyMC-dev/pymc_modem/main/firmware",
 	"role": {
-		"pymcModem": {
+		"ethermeshFirmware": {
 			"icon": "cell_tower",
-			"title": "pyMC Modem",
-			"tooltip": "Flash the current pyMC Modem firmware from pyMC-dev/pymc_modem firmware folders."
+			"title": "EtherMesh Firmware",
+			"tooltip": "Flash EtherMesh firmware bundled with this flasher repo."
+		},
+		"openHopModem": {
+			"icon": "cell_tower",
+			"title": "openHop Modem",
+			"tooltip": "Flash the current openHop Modem firmware from the upstream firmware repository folders."
 		}
 	},
 	"notice": {},
@@ -37,16 +42,18 @@
 	"device": [
 		{
 			"maker": "meshsmith",
-			"class": "pymc",
+			"class": "ethermesh",
+			"slug": "ethermesh-1w",
 			"name": "EtherMesh-1W",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "ethermeshFirmware",
+					"slug": "ethermesh",
 					"version": {
 						"custom": {
-							"notes": "Custom EtherMesh 1W pyMC Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the device and flash the factory image.",
+							"notes": "Custom EtherMesh 1W firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the device and flash the factory image.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -70,16 +77,16 @@
 		},
 		{
 			"maker": "meshsmith",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "Photon-1W XAIO ESP32 C6",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"custom": {
-							"notes": "Newest MeshSmith Photon-1W XIAO ESP32-C6 pyMC Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Newest MeshSmith Photon-1W XIAO ESP32-C6 openHop Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -115,16 +122,16 @@
 		},
 		{
 			"maker": "generic",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "ESP32-P4 Nano",
 			"icon": "/img/esp32.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"main": {
-							"notes": "Current firmware from pyMC-dev/pymc_modem main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Current firmware from the upstream firmware repository main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -158,16 +165,16 @@
 		},
 		{
 			"maker": "bq",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "Station G2",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"main": {
-							"notes": "Current B&Q Consulting Station G2 pyMC Modem firmware from pyMC-dev/pymc_modem main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Current B&Q Consulting Station G2 openHop Modem firmware from the upstream firmware repository main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -202,16 +209,16 @@
 		},
 		{
 			"maker": "heltec",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "Heltec T114",
 			"icon": "/img/lora.svg",
 			"type": "nrf52",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"main": {
-							"notes": "Current firmware from pyMC-dev/pymc_modem main branch.",
+							"notes": "Current firmware from the upstream firmware repository main branch.",
 							"files": [
 								{
 									"type": "flash",
@@ -227,16 +234,16 @@
 		},
 		{
 			"maker": "heltec",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "Heltec V3",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"main": {
-							"notes": "Current firmware from pyMC-dev/pymc_modem main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Current firmware from the upstream firmware repository main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -271,16 +278,16 @@
 		},
 		{
 			"maker": "heltec",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "Heltec Tracker V2",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"main": {
-							"notes": "Current Heltec Tracker V2 pyMC Modem firmware from pyMC-dev/pymc_modem main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Current Heltec Tracker V2 openHop Modem firmware from the upstream firmware repository main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -315,16 +322,16 @@
 		},
 		{
 			"maker": "heltec",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "Heltec V4",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"custom": {
-							"notes": "Heltec V4 pyMC Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Heltec V4 openHop Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -359,16 +366,16 @@
 		},
 		{
 			"maker": "heltec",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "Heltec V4.2",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"custom": {
-							"notes": "Heltec V4.2 GC1109 PA/FEM pyMC Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Heltec V4.2 GC1109 PA/FEM openHop Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -403,16 +410,16 @@
 		},
 		{
 			"maker": "heltec",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "Heltec V4.3",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"custom": {
-							"notes": "Heltec V4.3 KCT8103L PA/FEM pyMC Modem firmware bundled with this flasher repo, with FEM RX LNA bypass enabled for lower noise floor. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Heltec V4.3 KCT8103L PA/FEM openHop Modem firmware bundled with this flasher repo, with FEM RX LNA bypass enabled for lower noise floor. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -447,16 +454,16 @@
 		},
 		{
 			"maker": "ikoka",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "Ikoka Stick",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"main": {
-							"notes": "Current firmware from pyMC-dev/pymc_modem main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Current firmware from the upstream firmware repository main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -491,16 +498,16 @@
 		},
 		{
 			"maker": "lilygo",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "LilyGo T3S3",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"main": {
-							"notes": "Current firmware from pyMC-dev/pymc_modem main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Current firmware from the upstream firmware repository main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -535,16 +542,16 @@
 		},
 		{
 			"maker": "rak",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "RAK WisMesh Base/Rak3112",
 			"icon": "/img/rak_3112.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"main": {
-							"notes": "Current firmware from pyMC-dev/pymc_modem main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Current firmware from the upstream firmware repository main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
@@ -579,16 +586,16 @@
 		},
 		{
 			"maker": "seeed",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "Seeed XIAO nRF52 + Wio SX1262",
 			"icon": "/img/lora.svg",
 			"type": "nrf52",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"main": {
-							"notes": "Current firmware from pyMC-dev/pymc_modem main branch.",
+							"notes": "Current firmware from the upstream firmware repository main branch.",
 							"files": [
 								{
 									"type": "flash",
@@ -604,16 +611,16 @@
 		},
 		{
 			"maker": "seeed",
-			"class": "pymc",
+			"class": "openhop",
 			"name": "Seeed XIAO ESP32S3 + Wio SX1262",
 			"icon": "/img/lora.svg",
 			"type": "esp32",
 			"firmware": [
 				{
-					"role": "pymcModem",
+					"role": "openHopModem",
 					"version": {
 						"main": {
-							"notes": "Current firmware from pyMC-dev/pymc_modem main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+							"notes": "Current firmware from the upstream firmware repository main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",

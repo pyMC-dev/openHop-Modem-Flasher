@@ -1,12 +1,12 @@
-# pyMC MeshCore Flasher
+# openHop MeshCore Flasher
 
-pyMC MeshCore Flasher is a static, browser-based firmware flasher for loading pyMC Modem firmware onto supported MeshCore-compatible devices. It runs entirely in the browser using Web Serial, so the website only needs static hosting over HTTPS.
+openHop MeshCore Flasher is a static, browser-based firmware flasher for loading openHop Modem firmware onto supported MeshCore-compatible devices. It runs entirely in the browser using Web Serial, so the website only needs static hosting over HTTPS.
 
-The modem firmware variants are maintained in the pyMC modem repository:
+The modem firmware variants are maintained in the openHop modem repository:
 
 https://github.com/pyMC-dev/pymc_modem
 
-Most firmware files are loaded directly from the `pyMC-dev/pymc_modem` firmware folders. Temporary/custom firmware that is not yet in `pymc_modem` may be bundled under this repo's `firmware/` directory until it is moved upstream.
+Most firmware files are loaded directly from the upstream firmware repository folders. Temporary/custom firmware that is not yet upstream may be bundled under this repo's `firmware/` directory until it is moved.
 
 ## What it does
 

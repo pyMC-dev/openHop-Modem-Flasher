@@ -1,5 +1,5 @@
 {
-  "name": "pymc-modem-flasher",
+  "name": "openhop-modem-flasher",
   "compatibility_date": "2026-06-11",
   "assets": {
     "directory": ".",
