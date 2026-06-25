@@ -85,30 +85,30 @@
 				{
 					"role": "openHopModem",
 					"version": {
-						"custom": {
-							"notes": "Newest MeshSmith Photon-1W XIAO ESP32-C6 openHop Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+						"main": {
+							"notes": "Current MeshSmith Photon-1W XIAO ESP32-C6 openHop Modem firmware from the upstream firmware repository main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
-									"name": "/firmware/photon_1w_xiao_esp32c6/firmware.bin",
+									"name": "photon_1w_xiao_esp32c6/firmware.bin",
 									"title": "Update firmware only (firmware.bin)",
 									"address": 65536
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/photon_1w_xiao_esp32c6/bootloader.bin",
+									"name": "photon_1w_xiao_esp32c6/bootloader.bin",
 									"title": "Erase/full flash: bootloader.bin @ 0x0",
 									"address": 0
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/photon_1w_xiao_esp32c6/partitions.bin",
+									"name": "photon_1w_xiao_esp32c6/partitions.bin",
 									"title": "Erase/full flash: partitions.bin @ 0x8000",
 									"address": 32768
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/photon_1w_xiao_esp32c6/firmware.bin",
+									"name": "photon_1w_xiao_esp32c6/firmware.bin",
 									"title": "Erase/full flash: firmware.bin @ 0x10000",
 									"address": 65536
 								}
@@ -330,30 +330,30 @@
 				{
 					"role": "openHopModem",
 					"version": {
-						"custom": {
-							"notes": "Heltec V4 openHop Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+						"main": {
+							"notes": "Current Heltec V4 openHop Modem firmware from the upstream firmware repository main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
-									"name": "/firmware/heltec_v4/firmware.bin",
+									"name": "heltec_v4/firmware.bin",
 									"title": "Update firmware only (firmware.bin)",
 									"address": 65536
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/heltec_v4/bootloader.bin",
+									"name": "heltec_v4/bootloader.bin",
 									"title": "Erase/full flash: bootloader.bin @ 0x0",
 									"address": 0
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/heltec_v4/partitions.bin",
+									"name": "heltec_v4/partitions.bin",
 									"title": "Erase/full flash: partitions.bin @ 0x8000",
 									"address": 32768
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/heltec_v4/firmware.bin",
+									"name": "heltec_v4/firmware.bin",
 									"title": "Erase/full flash: firmware.bin @ 0x10000",
 									"address": 65536
 								}
@@ -374,30 +374,30 @@
 				{
 					"role": "openHopModem",
 					"version": {
-						"custom": {
-							"notes": "Heltec V4.2 GC1109 PA/FEM openHop Modem firmware bundled with this flasher repo. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+						"main": {
+							"notes": "Current Heltec V4.2 GC1109 PA/FEM openHop Modem firmware from the upstream firmware repository main branch. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
-									"name": "/firmware/heltec_v42/firmware.bin",
+									"name": "heltec_v42/firmware.bin",
 									"title": "Update firmware only (firmware.bin)",
 									"address": 65536
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/heltec_v42/bootloader.bin",
+									"name": "heltec_v42/bootloader.bin",
 									"title": "Erase/full flash: bootloader.bin @ 0x0",
 									"address": 0
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/heltec_v42/partitions.bin",
+									"name": "heltec_v42/partitions.bin",
 									"title": "Erase/full flash: partitions.bin @ 0x8000",
 									"address": 32768
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/heltec_v42/firmware.bin",
+									"name": "heltec_v42/firmware.bin",
 									"title": "Erase/full flash: firmware.bin @ 0x10000",
 									"address": 65536
 								}
@@ -418,30 +418,30 @@
 				{
 					"role": "openHopModem",
 					"version": {
-						"custom": {
-							"notes": "Heltec V4.3 KCT8103L PA/FEM openHop Modem firmware bundled with this flasher repo, with FEM RX LNA bypass enabled for lower noise floor. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
+						"main": {
+							"notes": "Current Heltec V4.3 KCT8103L PA/FEM openHop Modem firmware from the upstream firmware repository main branch, with FEM RX LNA bypass enabled for lower noise floor. Use Flash for firmware updates, or check Erase Device to erase the node and flash bootloader + partitions + firmware.",
 							"files": [
 								{
 									"type": "flash-update",
-									"name": "/firmware/heltec_v43/firmware.bin",
+									"name": "heltec_v43/firmware.bin",
 									"title": "Update firmware only (firmware.bin)",
 									"address": 65536
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/heltec_v43/bootloader.bin",
+									"name": "heltec_v43/bootloader.bin",
 									"title": "Erase/full flash: bootloader.bin @ 0x0",
 									"address": 0
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/heltec_v43/partitions.bin",
+									"name": "heltec_v43/partitions.bin",
 									"title": "Erase/full flash: partitions.bin @ 0x8000",
 									"address": 32768
 								},
 								{
 									"type": "flash-wipe",
-									"name": "/firmware/heltec_v43/firmware.bin",
+									"name": "heltec_v43/firmware.bin",
 									"title": "Erase/full flash: firmware.bin @ 0x10000",
 									"address": 65536
 								}
@@ -583,6 +583,31 @@
 				}
 			],
 			"tooltip": "<img class='device' src='/img/rak_3112.svg'>"
+		},
+		{
+			"maker": "rak",
+			"class": "openhop",
+			"name": "RAK4631 WisMesh Ethernet",
+			"icon": "/img/rak_4631.svg",
+			"type": "nrf52",
+			"firmware": [
+				{
+					"role": "openHopModem",
+					"version": {
+						"main": {
+							"notes": "Current RAK4631 WisMesh Ethernet openHop Modem firmware from the upstream firmware repository main branch.",
+							"files": [
+								{
+									"type": "flash",
+									"name": "rak4631_wismesh_eth/firmware.zip",
+									"title": "rak4631_wismesh_eth/firmware.zip"
+								}
+							]
+						}
+					}
+				}
+			],
+			"tooltip": "<img class='device' src='/img/rak_4631.svg'>"
 		},
 		{
 			"maker": "seeed",

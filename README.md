@@ -25,8 +25,11 @@ Most firmware files are loaded directly from the upstream firmware repository fo
 - Heltec Tracker V2
 - Heltec V3
 - Heltec V4
+- Heltec V4.2
+- Heltec V4.3
 - Ikoka Stick
 - LilyGo T3S3
+- RAK4631 WisMesh Ethernet
 - RAK WisMesh Base/Rak3112
 - Seeed XIAO ESP32S3 + Wio SX1262
 - Seeed XIAO nRF52 + Wio SX1262
